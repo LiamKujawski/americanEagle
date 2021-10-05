@@ -6,6 +6,9 @@
 
     <meta name="robots" content="noindex, nofollow">
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
 
     <link rel="stylesheet" href="css/normalize.min..css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -13,8 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 </head>
 
@@ -27,26 +29,51 @@
                             class="button button--primary">Live Chat Now</a></p>
                 </div>
 
-                <div class="member-widget">
-                    <ul class="login-links">
-                        <li><a href="#">Baby Registry</a></li>
-                        <li><a href="#">Login/Register</a></li>
-                        <li class="member-widget__cart">
-                            <a href="#">
-                                <span class="member-widget__item-count"><img src="images/shopping-cart.svg">5
-                                    items</span> Check out <strong>$ 2103.92</strong>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="site-utilities">
+
+                    <div class="member-widget">
+                        <ul class="login-links">
+                            <li><a href="#">Baby Registry</a></li>
+                            <li><a href="#">Login/Register</a></li>
+                            <li class="member-widget__cart">
+                                <a href="#">
+                                    <span class="member-widget__item-count"><img alt="Go To Shopping Cart"
+                                            src="images/shopping-cart.svg">5
+                                        items</span> Check out <strong>$ 2103.92</strong>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="site-search">
+                        <form class="site-search__form">
+                            <label for="headerSiteSeach" class="visually-hidden">Search this site...</label>
+                            <input id="headerSiteSearch" type="search" placeholder="Search this site.." />
+                            <button class="site-search__button">
+                                <!-- need a search icon -->
+                                <img alt="Search Icon" src="images/search_black_24dp.svg">
+                                <span class="visually-hidden">Submit Search</span>
+                            </button>
+                        </form>
+                    </div>
                 </div>
 
                 <div class="header-toggles--mobile">
                     <a href="#">
                         <!-- need a cart icon -->
-                        <img src="images/shopping-cart.svg">
+                        <img alt="go to shopping cart" src="images/shopping-cart.svg">
                         <span class="visually-hidden">Go to Cart</span>
                     </a>
-                    <a href="#" class="menu-toggle">
+                    <input type="checkbox" id="menu-input" class="menu">
+                    <label role="menu" tabindex="0" for="menu-input" class="menu-label">
+                        <span alt="close menu" class="material-icons menu-toggle--icon">
+                            close
+                        </span>
+                        <span alt="open menu" class="material-icons menu-toggle--icon">
+                            menu
+                        </span>
+                    </label>
+                    <!-- <a href="#" class="menu-toggle">
                         <span class="material-icons menu-toggle--icon">
                             close
                         </span>
@@ -55,8 +82,10 @@
                         </span>
                       
                         <span class="visually-hidden">Toggle Menu</span>
-                    </a>
+                    </a> -->
                 </div>
+
+
 
             </div>
             <div class="header-middle">
@@ -67,17 +96,17 @@
                     <img src="images/bb-logo.png" alt="Beautiful Beginnings: Celebrating baby and child">
                 </div>
 
-                <div class="site-search">
+                <!-- <div class="site-search">
                     <form class="site-search__form">
                         <label for="headerSiteSeach" class="visually-hidden">Search this site...</label>
                         <input id="headerSiteSearch" type="search" placeholder="Search this site.." />
                         <button class="site-search__button">
-                            <!-- need a search icon -->
-                            <img src="images/search_black_24dp.svg">
+                           
+                            <img alt="Search Icon" src="images/search_black_24dp.svg">
                             <span class="visually-hidden">Submit Search</span>
                         </button>
                     </form>
-                </div>
+                </div> -->
 
                 <div class="member-widget">
                     <ul class="login-links">
@@ -89,26 +118,27 @@
                                     2103.92</strong>
                             </a>
                         </li>
+                        <div class="site-search">
+                            <form class="site-search__form">
+                                <label for="headerMenuSiteSeach" class="visually-hidden">Search this site...</label>
+                                <input id="headerMenuSiteSeach" type="search" placeholder="Search this site.." />
+                                <button class="site-search__button">
+                                    <span class="visually-hidden">Submit Search</span>
+                                </button>
+                            </form>
+                        </div>
                     </ul>
                 </div>
 
             </div>
             <div class="header-bottom">
 
-                <div class="site-search">
-                    <form class="site-search__form">
-                        <label for="headerMenuSiteSeach" class="visually-hidden">Search this site...</label>
-                        <input id="headerMenuSiteSeach" type="search" placeholder="Search this site.." />
-                        <button class="site-search__button">
-                            <span class="visually-hidden">Submit Search</span>
-                        </button>
-                    </form>
-                </div>
+
 
                 <nav class="main-navigation">
                     <ul>
-                        <li><a href="#">Baby Apparel</a></li>
-                        <li><a href="#">Baby Gifts</a></li>
+                        <li><a href="#">Apparel</a></li>
+                        <li><a href="#">Gifts</a></li>
                         <li>
                             <a href="#">Christening</a>
                             <ul>
@@ -130,25 +160,24 @@
         <main class="page-main">
 
             <div class="slideshow">
+                <div class="slide__content">
+                    <a href="#" class="cta">
+                        <h2 class="cta__title">Crib Bedding Sale</h2>
+                        <p class="cta__description">Save up to 50% off on select crib bedding now through Memorial
+                            Day!</p>
+                        <span class="button button--primary">Shop</span>
+                    </a>
+                </div>
                 <section class="slideshow__slide slide">
                     <figure class="slide__bg slide-show-active">
-                        <img src="images/bb-slideshow-example-1.jpg" />
+                        <img alt="Close up of Baby's Feet" src="images/bb-slideshow-example-1.jpg" />
                         <figcaption>Baby Dean - Wheaton, illinois</figcaption>
                     </figure>
                     <figure class="slide__bg slide-show-active">
-                        <img src="images/bb-slideshow-example-2.png" />
+                        <img alt="Pink and white Baby Crib" src="images/bb-slideshow-example-2.png" />
                         <figcaption>Baby Dean - Wheaton, illinois</figcaption>
                     </figure>
-                    <div class="slide__content">
-                        <a href="#" class="cta">
-                            <h2 class="cta__title">Crib Bedding Sale</h2>
-                            <p class="cta__description">Save up to 50% off on select crib bedding now through Memorial
-                                Day!</p>
-                            <span class="button button--primary">Shop Crib Beding</span>
-                        </a>
-                    </div>
                 </section>
-                <!-- need another slide and to setup slideshow functioanlity -->
             </div>
 
             <section class="featured-widget">
@@ -162,21 +191,22 @@
                     <ul class="card-list">
                         <li>
                             <a href="#" class="card-list__item">
-                                <img class="item__image" src="images/clothes.jpg" />
+                                <img alt="Hazel Ruffle Top and Capri Set" class="item__image"
+                                    src="images/clothes.jpg" />
                                 <h3 class="item__title">Hazel Ruffle Top and Capri Set by Angel Dear</h3>
                                 <span class="item__price">$49.00</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="card-list__item">
-                                <img class="item__image" src="images/crib.jpg" />
+                                <img alt="white and grey crib" class="item__image" src="images/crib.jpg" />
                                 <h3 class="item__title">Alexis Crib with Rose Garland by Newport Cottages</h3>
                                 <span class="item__price">$1,395.00</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="card-list__item">
-                                <img class="item__image" src="images/stuffed-animal.jpg" />
+                                <img alt="White and grey giraffe" class="item__image" src="images/stuffed-animal.jpg" />
                                 <h3 class="item__title">Little G Plush Giraffe by Little Giraffe</h3>
                                 <span class="item__price">$42.00</span>
                             </a>
@@ -203,17 +233,21 @@
             </div>
 
         </main>
-        <footer class="page-footer">
+        <footer class="page-footer menu">
             <div class="footer-top">
 
                 <div class="page-footer__column">
-                    <div class="expander">
-                        <h2 class="expander__toggle">About Us
-                            <span class="material-icons expander__toggle--icon">
-                                chevron_right
-                            </span>
-                        </h2>
-                        <div class="expander__panel">
+                    <div class="expander" id="about-us">
+                        <input type="checkbox" id="about-accordion" class="expander__toggle--input">
+                        <label role="button" tabindex="0" for="about-accordion" id="about-accordion"
+                            class="expander-label">
+                            <h2 class="expander__toggle">About Us
+                                <span class="material-icons expander__toggle--icon">
+                                    chevron_right
+                                </span>
+                            </h2>
+                        </label>
+                        <div tabindex="0" class="expander__panel">
                             <ul class="link-list">
                                 <li><a href="#">Our Story</a></li>
                                 <li><a href="#">Baby Registry</a></li>
@@ -226,12 +260,15 @@
 
                 <div class="page-footer__column">
                     <div class="expander">
-                        <h2 class="expander__toggle">Service
-                            <span class="material-icons expander__toggle--icon">
-                                chevron_right
-                            </span>
-                        </h2>
-                        <div class="expander__panel">
+                        <input type="checkbox" id="service-accordion" class="expander__toggle--input">
+                        <label role="button" tabindex="0" for="service-accordion" class="expander-label">
+                            <h2 class="expander__toggle">Service
+                                <span class="material-icons expander__toggle--icon">
+                                    chevron_right
+                                </span>
+                            </h2>
+                        </label>
+                        <div tabindex="0" class="expander__panel">
                             <ul class="link-list">
                                 <li><a href="#">Contact Us</a></li>
                                 <li><a href="#">Order Status</a></li>
@@ -248,12 +285,16 @@
 
                 <div class="page-footer__column">
                     <div class="expander">
-                        <h2 class="expander__toggle">Shop
-                            <span class="material-icons expander__toggle--icon">
-                                chevron_right
-                            </span>
-                        </h2>
-                        <div class="expander__panel">
+                        <input type="checkbox" id="shop-accordion" class="expander__toggle--input">
+                        <label role="button" tabindex="0" for="shop-accordion" class="expander-label">
+                            <h2 class="expander__toggle">Shop
+                                <span class="material-icons expander__toggle--icon">
+                                    chevron_right
+                                </span>
+                            </h2>
+                        </label>
+
+                        <div tabindex="0" class="expander__panel">
                             <ul class="link-list">
                                 <li><a href="#">Baby Apparel</a></li>
                                 <li><a href="#">Baby Gifts</a></li>
@@ -271,24 +312,28 @@
 
                 <div class="page-footer__column">
                     <!-- <div class="wysiwyg"> -->
-                        <div class="expander">
+                    <div class="expander">
+                        <input type="checkbox" id="contact-accordion" class="expander__toggle--input">
+                        <label role="button" tabindex="0" for="contact-accordion" class="expander-label">
                             <h2 class="expander__toggle">Contact Us
                                 <span class="material-icons expander__toggle--icon">
                                     chevron_right
                                 </span>
                             </h2>
-                            <div class="expander__panel">
-                                <p><strong>Beautiful Beginnings</strong><br />4472 Lawn Avenue<br />Western Springs, IL, 60558
-                                </p>
-                                <p>708.246.1212</p>
-                                <p><strong>Store Hours</strong><br />Monday - Friday 10am-5:30pm<br />Saturday - 10am -
-                                    5pm<br />Sunday - Closed</p>
-                            </div>
+                        </label>
+                        <div tabindex="0" class="expander__panel">
+                            <p><strong>Beautiful Beginnings</strong><br />4472 Lawn Avenue<br />Western Springs, IL,
+                                60558
+                            </p>
+                            <p>708.246.1212</p>
+                            <p><strong>Store Hours</strong><br />Monday - Friday 10am-5:30pm<br />Saturday - 10am -
+                                5pm<br />Sunday - Closed</p>
                         </div>
+                    </div>
                     <!-- </div> -->
                 </div>
 
-            
+
 
             </div>
             <div class="footer-middle">
@@ -297,41 +342,50 @@
                         <h2>Follow Us</h2>
                         <ul class="social-list">
                             <li>
-                                <a href="#"><img src="images/social-facebook.png"><!--Facebook--></a>
+                                <a href="#"><img alt="Facebook link" src="images/social-facebook.png">
+                                    <!--Facebook-->
+                                </a>
                             </li>
                             <li>
-                                <a href="#"><img src="images/social-twitter.png"><!--Twitter--></a>
+                                <a href="#"><img alt="Twitter link" src="images/social-twitter.png">
+                                    <!--Twitter-->
+                                </a>
                             </li>
                             <li>
-                                <a href="#"><img src="images/social-pintrest.png"><!--Pinterest--></a>
+                                <a href="#"><img alt="Pinterest link" src="images/social-pintrest.png">
+                                    <!--Pinterest-->
+                                </a>
                             </li>
                             <li>
-                                <a href="#"><img src="images/social-youtube.png"><!--Youtube--></a>
+                                <a href="#"><img alt="Youtube link" src="images/social-youtube.png">
+                                    <!--Youtube-->
+                                </a>
                             </li>
                             <li>
-                                <a href="#"><img src="images/social-google-plus.png"><!--Google Plus--></a>
+                                <a href="#"><img alt="Google plus link" src="images/social-google-plus.png">
+                                    <!--Google Plus-->
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                </div>
-                <div class="footer-middle">
-                    <div class="newsletter">
-                        <h2>Newsletter</h2>
-                        <p>Get the latest promotions and special offers delivered directly toyour inbox!</p>
-                        <form class="newsletter__form">
-                            <label for="siteNewsletterEmail" class="visually-hidden">Email Address</label>
-                            <input id="siteNewsletterEmail" type="text" placeholder="Email Address..." />
-                            <button class="button button--primary">
-                                <span class="material-icons button button--primary--icon">
+            </div>
+            <div class="footer-middle">
+                <div class="newsletter">
+                    <h2>Newsletter</h2>
+                    <p>Get the latest promotions and special offers delivered directly toyour inbox!</p>
+                    <form class="newsletter__form">
+                        <label for="siteNewsletterEmail" class="visually-hidden">Email Address</label>
+                        <input id="siteNewsletterEmail" type="text" placeholder="Email Address..." />
+                        <button class="button button--primary">
+                            <span class="material-icons button button--primary--icon">
                                 send
-                                </span></button>
-                        </form>
-                    </div>
+                            </span></button>
+                    </form>
                 </div>
-          
-            <div class="footer-bottom">
+            </div>
 
+            <div class="footer-bottom">
                 <div class="page-footer__column">
                     <div class="copyright">
                         <p><span class="copyright__text">@2013 Beautiful Beginnings. All Rights Reserved</span> <a
