@@ -14,6 +14,14 @@ document.querySelector("#menu-input").addEventListener("click", () => {
   
   
 document.addEventListener("DOMContentLoaded", function(event) {
+
+    //  var images = document.getElementsByTagName('img');
+    //  images.each(function() {
+    //       document.querySelector(this).width($(this).width() / 2);
+    //       document.querySelector(this).height($(this).height() / 2);
+    //  )};
+
+
     document.addEventListener("keyup", function(event) {
     let et = event.target;
     if((et.className.match("menu-label") || et.className.match("menu-toggle--icon")) && !document.querySelector("#menu-input").checked) {
@@ -24,5 +32,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
         et.click();
     }
 });
-})
+});
 
