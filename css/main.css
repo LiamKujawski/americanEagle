@@ -895,11 +895,12 @@
         animation-name: slideshow;
         animation-delay: 0s;
         animation-iteration-count: infinite;
-        animation-duration: 30s;
+        animation-duration: 40s;
         animation-direction: normal;
         animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
 
-        -webkit-animation-name: slideshow;
+        /* -webkit-animation-name: slideshow;
         -webkit-animation-delay: 0s;
         -webkit-animation-iteration-count: infinite;
         -webkit-animation-duration: 30s;
@@ -925,10 +926,41 @@
         -ms-animation-iteration-count: infinite;
         -ms-animation-duration: 30s;
         -ms-animation-direction: normal;
-        -ms-animation-fill-mode: forwards;
+        -ms-animation-fill-mode: forwards; */
     }
+
+        @keyframes slideshow {
+            10% {
+                left: 0;
+            }
+
+            25%  {
+                left: -100%;
+            }
+            35%  {
+                left: -100%;
+            }
+
+            50%  {
+                left: -200%;
+            }
+            60%  {
+                left: -200%;
+            }
+
+            75%  {
+                left: -300%;
+            }
+            85%  {
+                left: -300%;
+            }
+
+            100%  {
+                left: -400%;
+            }
+        }
  
-    @keyframes slideshow {
+    /* @keyframes slideshow {
         5% {
             left: 0;
         }
@@ -953,7 +985,7 @@
         100% {
             left: 0;
         }
-      }
+      } */
   
  
 
